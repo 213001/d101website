@@ -30,9 +30,9 @@
 	width: 1280px;
 }
 .titlestyle {
-	font-family: "微軟正黑體 Light";
 	font-size: 24px;
 	text-align: center;
+	color: #000;
 }
 .textstyle {
 	font-size: 18px;
@@ -47,13 +47,62 @@
 }
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/213001 - 5.jpg" width="1280" height="150" /></div>
   <div id="article">
+    <div id="Accordion1" class="Accordion" tabindex="0">
+      <div class="AccordionPanel">
+        <div class="titlestyle">基本資料</div>
+        <div class="AccordionPanelContent">
+          <table width="1000" height="231" border="0">
+            <tr>
+              <td colspan="2"><center><img src="images/我.jpg" width="300" height="300" /></center></td>
+            </tr>
+            <tr class="textstyle">
+              <td width="424" height="29" bgcolor="#999999" class="titlestyle">個人資料</td>
+              <td width="368" bgcolor="#999999" class="titlestyle">學經歷</td>
+            </tr>
+            <tr>
+            
+              <td><p class="textstyie">姓名:江芯羽</p>
+                <p class="textstyie">性別:女</p>
+                <p class="textstyie">E-mail:11213001@gm.hnvs.cy.edu.tw</p>
+              <p class="textstyie">興趣:唱歌</p></td>
+              
+              <td>
+              <p class="textstyie">大林國小</p>
+                <p class="textstyie">大林國中</p>
+              <p class="textstyie">華南高商</p>
+              <p class="textstyie">幹部:衛生、環保股長              </p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="titlestyle">設計理念</div>
+        <div class="AccordionPanelContent">
+          <p class="textstyie">&quot;嘉義&quot;作為台灣的歷史文化城市</p>
+          <p class="textstyie">嘉義市古名「諸羅山」，亦名「桃城」</p>
+          <p class="textstyie">其設計理念通常強調的是「地方性」和「文化傳承」，同時也融合現代化的元素，以適應城市發展的需求。</p>
+          <p><span class="textstyie" data-huuid="3587063495933347351">位於臺灣西南部，周邊被嘉義縣環繞。</span></p>
+          <p><span class="textstyie" data-huuid="3587063495933347351"> </span><span class="textstyie" data-huuid="3587063495933348178">嘉義市有「畫都」的美譽，擁有豐富的歷史文化和人文藝術，也是阿里山森林鐵路的起點</span></p>
+        </div>
+      </div>
+      <div class="AccordionPanel">
+        <div class="titlestyle">學習反思</div>
+        <div class="AccordionPanelContent">
+          <p class="textstyie">在這一學期的網頁設計課學到了很多，</p>
+          <p class="textstyie">幫助自己設計了網頁，在過程中是需要花很多時間去設計以及修改，雖然中途有想放棄的念頭但還是把它一步一步的完成了.</p>
+          <p class="textstyie">把這些學習成果慢慢累積下來。希望學了這些技巧與知識以後可以幫助到其他人，在工作需求上也會輕而易舉。</p>
+        </div>
+      </div>
+    </div>
    
   </div>
   <div id="item">
@@ -95,6 +144,7 @@
 <img src="images/copyright.jpg" width="1280" height="50" /></div>
 <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var Accordion1 = new Spry.Widget.Accordion("Accordion1");
 </script>
 </body>
 </html>
